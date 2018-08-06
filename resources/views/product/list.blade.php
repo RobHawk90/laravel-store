@@ -19,6 +19,7 @@
           <th>Price</th>
           <th>Quantity</th>
           <th></th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -29,6 +30,7 @@
             <td>{{ $p->price }}</td>
             <td>{{ $p->quantity }}</td>
             <td><a href="/product/detail/{{$p->id}}">Detail</a></td>
+            <td><a href="/product/remove/{{$p->id}}">Remove</a></td>
           </tr>
         @endforeach
       </tbody>

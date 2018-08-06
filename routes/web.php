@@ -15,4 +15,5 @@ Route::get('/', 'ProductController@list');
 Route::get('/product', 'ProductController@list');
 Route::get('/product/form', 'ProductController@form');
 Route::get('/product/detail/{id}', 'ProductController@detail');
+Route::get('/product/remove/{id}', 'ProductController@remove');
 Route::post('/product/save', 'ProductController@save');
