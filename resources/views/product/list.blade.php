@@ -17,6 +17,7 @@
           <th>Name</th>
           <th>Description</th>
           <th>Price</th>
+          <th>Size</th>
           <th>Quantity</th>
           <th></th>
           <th></th>
@@ -28,6 +29,7 @@
             <td>{{ $p->name }}</td>
             <td>{{ $p->description }}</td>
             <td>{{ $p->price }}</td>
+            <td>{{ $p->size }}</td>
             <td>{{ $p->quantity }}</td>
             <td><a href="/product/detail/{{$p->id}}">Detail</a></td>
             <td><a href="/product/remove/{{$p->id}}">Remove</a></td>

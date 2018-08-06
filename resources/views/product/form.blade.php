@@ -15,6 +15,10 @@
       <input type="number" class="form-control" name="price" id="price">
     </div>
     <div class="form-group">
+      <label for="size">Size</label>
+      <input type="text" class="form-control" name="size" id="size">
+    </div>
+    <div class="form-group">
       <label for="quantity">Quantity</label>
       <input type="number" class="form-control" name="quantity" id="quantity">
     </div>
