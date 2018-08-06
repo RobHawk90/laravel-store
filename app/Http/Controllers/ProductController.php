@@ -2,6 +2,7 @@
 
 use DB;
 use Request;
+use App\Http\Requests\ProductRequest;
 
 use App\Product;
 
@@ -19,8 +20,8 @@ class ProductController extends Controller {
     return view('product/form');
   }
 
-  public function save() {
-    Product::create(Request::all());
+  public function save(ProductRequest $request) {
+    Product::create($request->all());
     return redirect()
             ->action('ProductController@list')
             ->withInput(Request::only('name'));

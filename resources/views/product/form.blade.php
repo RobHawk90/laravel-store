@@ -1,5 +1,14 @@
 @extends('layout.container')
 @section('content')
+  @if(count($errors))
+    <div class="alert alert-warning">
+      <ul>
+        @foreach($errors->all() as $error)
+          <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
+  @endif
   <form action="/product/save" method="post">
   <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="form-group">
